@@ -1,6 +1,5 @@
 header {
   width: 100%;
-  background: #f7b925;
   padding-bottom: -60px;
   border-bottom: 6px solid #081451;
 }
@@ -33,6 +32,11 @@ img {
   border-radius: 0px;
 }
 
-.white{
+.white {
   color: white;
+}
+
+.header {
+  background-image: url("../../assets/img/nav.jpeg");
+  background-repeat: repeat-x;
 }
