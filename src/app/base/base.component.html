@@ -1,0 +1,123 @@
+<header>
+  <div class="container ">
+    <img src="assets/img/logo.png"/>
+    <b class="title"> Universidad Iberoamericana del Ecuador</b>
+    <br>
+  </div>
+  <div class="white"></div>
+
+</header>
+<nav class="navbar navbar-default blue-background">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
+              aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div id="navbar" class="navbar-collapse  white collapse container">
+      <ul class="nav navbar-nav">
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="quienes">QUIENES SOMOS</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #quienes="matMenu">
+            <button mat-menu-item>Información General</button>
+            <button mat-menu-item>El Rector</button>
+            <button mat-menu-item>El Canciller</button>
+            <button mat-menu-item>Autoridades</button>
+            <button mat-menu-item>Transparencia</button>
+            <button mat-menu-item>Implantación General</button>
+            <button mat-menu-item>Políticas Institucionales</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="documentacion">DOCUMENTACIÓN UNIB.E</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #documentacion="matMenu">
+            <button mat-menu-item>Documental Legal</button>
+            <button mat-menu-item>Gestión Documental Share</button>
+            <button mat-menu-item>Gestión Documental Workspace</button>
+            <button mat-menu-item>Listado de Docentes</button>
+            <button mat-menu-item>Listado de Estudiantes</button>
+            <button mat-menu-item>Calendario Académico</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="OFERTA">OFERTA ACADÉMICA</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #OFERTA="matMenu">
+            <button mat-menu-item>Nivelación</button>
+            <button mat-menu-item>Pregrado</button>
+            <button mat-menu-item>Posgrado</button>
+            <button mat-menu-item>Educación Continua</button>
+            <button mat-menu-item>Idiomas</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="INVESTIGACION">INVESTIGACIÓN</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #INVESTIGACION="matMenu">
+            <button mat-menu-item> Políticas de Investigación</button>
+            <button mat-menu-item>Grupos de Investigación</button>
+            <button mat-menu-item>Centros de Investigación</button>
+            <button mat-menu-item>Lineas y Proyectos de Investigación</button>
+            <button mat-menu-item>Revistas y Libros</button>
+            <button mat-menu-item>Reglamentos y Normas</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="VIDA">VIDA UNIB.E</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #VIDA="matMenu">
+            <button mat-menu-item>Plataforma Virtual</button>
+            <button mat-menu-item>Plataforma Semipresencial</button>
+            <button mat-menu-item>Webmail</button>
+            <button mat-menu-item [matMenuTriggerFor]="Reglamentos">Bienestar Universitario</button>
+          </mat-menu>
+          <!-- detalle  del submenu -->
+          <mat-menu #Reglamentos="matMenu">
+            <button mat-menu-item>Becas</button>
+            <button mat-menu-item>Servicios Médicos</button>
+            <button mat-menu-item>Servicios Odontologicos</button>
+            <button mat-menu-item>Servicios Guardería</button>
+            <button mat-menu-item>Lactancia Materna</button>
+            <button mat-menu-item>Servicios Piscología</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button [matMenuTriggerFor]="BIBLIOTECA">BIBLIOTECA</button>
+
+          <!-- detalle  del menu -->
+          <mat-menu #BIBLIOTECA="matMenu">
+            <button mat-menu-item>Consultas Biblioteca</button>
+            <button mat-menu-item>Bibliotecas Virtuales</button>
+            <button mat-menu-item>Trabajos de Titulación</button>
+            <button mat-menu-item>Revistas Científicas</button>
+            <button mat-menu-item>Catálogos Universitarios en Línea</button>
+            <button mat-menu-item>Recursos de Acceso Libre</button>
+          </mat-menu>
+        </li>
+        <li>
+          <!-- boton del menu -->
+          <button mat-button>CONTACTOS</button>
+        </li>
+      </ul>
+
+
+    </div>
+  </div>
+</nav>
